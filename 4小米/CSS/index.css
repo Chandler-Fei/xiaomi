@@ -1,0 +1,149 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+* a{
+    text-decoration: none;
+}
+/* 整个最大的div的css */
+.whole {
+    width: 1903px;
+    height: 7809px;
+    /* background-color: aquamarine; */
+    font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+/* 头部的css代码 */
+.header {
+    height: 140px;
+    background-color: bisque;
+}
+/* 定义头部导航栏的大小 */
+.nav-top {
+    height: 40px;
+    background-color: #333;
+}
+/* 定义头部导航栏内容部分的大小 */
+.nav-top-content{
+    width: 1226px;
+    height: 40px;
+    margin: auto;
+    /* background-color: chocolate; */
+
+}
+
+/* 对头部导航栏内部的a标签进行样式修改 */
+.nav-top-content a{
+    font-size: 12px;
+    color: #B0B0B0;
+    line-height: 40px;
+    display: inline-block;
+}
+.nav-top-content a:hover {
+    color: #fff;
+}
+
+/* 整个头部最左边的导航栏大小 */
+.nav-top-left {
+    width: 794.09px;
+    height: 40px;
+    display: inline-block;
+}
+/* 导航栏内文字与文字之间的空隙间隔 */
+.nav-top-a-margin {
+    color: #424242;
+    margin: 0px 3.6px;
+    font-size: 12px;
+}
+
+/*  头部导航栏右边的内容部分的css */
+/* 购物车部分的css */
+.shopping-cart {
+    width: 120px;
+    float: right;
+    background-color: #424242;
+    text-align: center;
+    margin-left: 15px; 
+}
+
+/* 购物车左边部分的css(用户信息) */
+.user-info {
+    width: 142.47px;
+    height: 40px;
+    float: right;
+
+}
+
+/* 头部导航栏的隐藏层css代码 */
+.nav-top-left-none {
+    width: 124px;
+    height: 0px;
+    background-color: aqua;
+    /* display: inline-block; */
+    position: absolute;
+    top: 40px;
+    margin-left: -80px;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    line-height: 1px;
+    /* 用于隐藏超出原有内容的东西 */
+    overflow: hidden;
+    /* 是已定义的初始高变成最终的高的过度效果 */
+    transition:height 1s;
+}
+.download:hover .nav-top-left-none{
+    /* display: inline; */
+    height: 150px;
+}
+.nav-top-left-done-img{
+    width: 90px;
+    height: 90px;
+    margin: 18px 17px 12px 17px;
+}
+
+
+
+
+.nav-logo {
+    height: 100px;
+    
+}
+
+
+
+
+
+
+
+
+/* 主要内容的css代码 */
+.content-main {
+    width: 1226px;
+    height: 607px;
+    background-color: blueviolet;
+}
+
+/* 次要内容的css代码 */
+.content-secondary {
+    height: 6401px;
+    background-color: brown;
+}
+
+/* 服务部分的css代码 */
+.service {
+    height: 332px;
+    background-color: burlywood;
+}
+
+/* 信息部分的css代码 */
+.info {
+    height: 266px;
+    background-color: cadetblue;
+}
+
+/* 最右边的固定侧栏 */
+.right-sidebar {
+
+}
