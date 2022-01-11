@@ -52,11 +52,14 @@
                     <!-- 购物车部分 -->
                     <div class="shopping-cart">
                         <!-- 购物车的隐藏层部分 -->
-                        <div class="shopping-cart-none">购物车里还没有商品，赶快添加吧！</div>
                         <a  href="#a">
-                            <svg   viewBox="0 0 1024 1024"   width="20" height="20"><path d="M937.7 240.4c-18.3-22.8-46-36.2-75.5-36.2h-381c-17.4 0-31.7 14.3-31.7 31.7s14.3 31.7 31.7 31.7h381.1c9.8 0 19.2 4.5 25.5 12.5 6.3 8 8.5 18.3 5.8 29.9l-50.9 314c-3.1 15.2-16.5 25.5-31.7 25.5H404.8c-15.2 0-28.6-10.7-31.7-24.6l-75-429.7c-9.4-44.2-49.1-76.4-94.3-76.4H97c-17.4 0-31.7 14.7-31.7 32.2s14.3 31.7 31.7 31.7h106.8c15.2 0 28.6 10.7 31.7 24.6l75 429.7c9.4 44.2 49.1 76.4 94.3 76.4h406.1c45.1 0 84-30.8 94.7-77.3l50.9-314c6.2-29-0.5-58.5-18.8-81.7z" fill="#8a8a8a" p-id="4793"></path><path d="M791.6 841.2m-63.9 0a63.9 63.9 0 1 0 127.8 0 63.9 63.9 0 1 0-127.8 0Z" fill="#8a8a8a" p-id="4794"></path><path d="M429.3 841.2m-63.9 0a63.9 63.9 0 1 0 127.8 0 63.9 63.9 0 1 0-127.8 0Z" fill="#8a8a8a" p-id="4795"></path></svg>
+                            <div class="cart-img">
+                                <span class="shopping-cart-img"></span>
+                            </div>
+
                             <em>购物车 (0)</em>
                          </a>
+                         <div class="shopping-cart-none">购物车里还没有商品，赶快添加吧！</div>
                     </div>
                     <!-- 购物车左边部分(用户信息) -->
                     <div class="user-info">
@@ -82,7 +85,22 @@
                     <div class="logo-right-nav">
                         <!-- 用无序列表ul来做导航栏 -->
                         <ul class="nav-list-one">
-                            <li class="nav-item-empty"></li>
+                            <li class="nav-item-empty">
+                                <!-- 主页上的分类栏 -->
+                                <div class="category">
+                                    <ul class="category-list">
+                                        <li class="category-item">
+                                            <a href="#a" class="title">
+                                                <span class="title-text">手机</span>
+                                                <div class="title-arrow">
+                                                    <span class="title-arrow-img"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
                             <li class="nav-item-one">
                                 <a href="#a" class="nav-item-title">
                                    Xiaomi手机
