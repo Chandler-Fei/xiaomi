@@ -2,8 +2,17 @@
     padding: 0px;
     margin: 0px;
 }
-* a{
+a{
     text-decoration: none;
+    color:inherit;
+}
+ul {
+    list-style: none;    /*清除列表默认样式*/
+    padding: 0;      /*清除padding*/
+    margin: 0;
+}
+div {
+    display: block;
 }
 /* 整个最大的div的css */
 .whole {
@@ -16,7 +25,6 @@
 /* 头部的css代码 */
 .header {
     height: 140px;
-    background-color: bisque;
 }
 /* 定义头部导航栏的大小 */
 .nav-top {
@@ -74,7 +82,7 @@
 
 }
 
-/* 头部导航栏的隐藏层css代码 */
+/* 头部导航栏下载app的隐藏层css代码 */
 .nav-top-left-none {
     width: 124px;
     height: 0px;
@@ -91,44 +99,301 @@
     /* 用于隐藏超出原有内容的东西 */
     overflow: hidden;
     /* 是已定义的初始高变成最终的高的过度效果 */
-    transition:height 1s;
+    transition:height .3s;
+    box-shadow: 0 1px 5px #aaa;
+    z-index: 30;
 }
-.download:hover .nav-top-left-none{
-    /* display: inline; */
-    height: 150px;
+
+/* 一个小三角的css 用hover伪类鼠标暂停显示 */
+.nav-top-left-triangle {
+    /* width: 10px;
+    height: 10px; */
+    /* background-color: #fff; */
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -27px;
+    border-bottom: 10px solid #fff;
+    border-left:10px solid transparent ;
+    border-right:10px solid transparent ;
+    border-top:10px solid transparent ;
+
 }
+
+/* 小米app下载图片的css设置 */
 .nav-top-left-done-img{
     width: 90px;
     height: 90px;
     margin: 18px 17px 12px 17px;
 }
 
+/* 下载app的hover伪类鼠标暂停事件 */
+.download:hover .nav-top-left-none {
+    /* 设置鼠标暂停后的内容高度 */
+    height: 135px;
+}
+
+/* 鼠标暂停显示被隐藏掉的小三角 */
+.download:hover .nav-top-left-triangle {
+    display: inline;
+}
 
 
+/* 购物车的隐藏层设置 */
+.shopping-cart-none {
+    width: 316px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    margin: 40px 0px 0px -196px;
+    color: #424242;
+    line-height: 80px;
+    transition: height 1s;
+    overflow: hidden;
+    box-shadow: 0 1px 5px #aaa;
+    z-index: 30;
+}
 
+/* 购物车的hover鼠标暂停事件设置 */
+.shopping-cart:hover {
+    background-color: #fff;
+}
+/* 改变隐藏内容的高度 */
+.shopping-cart:hover .shopping-cart-none{
+    height: 80px;
+}
+/* 鼠标暂停改变文字的颜色 */
+.shopping-cart:hover a{
+    color: #ff6700;
+}
+
+
+/* 头部logo导航栏css代码 */
 .nav-logo {
     height: 100px;
+    position: relative;
+}
+
+/* 头部logo导航栏内容css代码 */
+.nav-logo-content {
+    width: 1226px;
+    height: 100px;
+    /* background-color: aqua; */
+    margin: 0px auto;
+    /* position: relative; */
+}
+/* 头部logo的css代码 */
+.logo {
+    width: 62px;
+    height: 56px;
+    float: left;
+    margin-top: 20px;
+}
+.logo-img {
+    width: 52px;
+    height: 52px;
+    background: url(../Images/logo.png);
+    display: inline-block;
+}
+
+/* logo右边的导航栏css */
+.logo-right-nav {
+    width: 850px;
+    height: 100px;
+    float: left;
+}
+
+/* ul标签，一个大的格式清理 */
+.nav-list-one {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 0px 0px 30px;
+    height: 88px;
+    font: 16px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+
+
+.nav-item-empty {
+    height: 88px;
+    width: 142px;
+    padding-right: 15px;
+    float: left;
+}
+
+/* 设置li标签的大小和让文字在合适的位置 */
+.nav-item-one {
+    float: left;
+    height: 88px;
+    line-height: 70px;
+}
+
+.nav-item-one a {
+    padding: 26px 10px 38px;
+
+}
+
+/* 鼠标暂停改变颜色 */
+.nav-item-title:hover{
+    color: #ff6700;
+}
+
+/* logo导航栏的隐藏层css */
+.logo-none {
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    /* border-top: 1px solid #e0e0e0; */
+    /* color: #ff6700; */
+    box-shadow: 0 3px 4px rgb(0 0 0 / 18%);
+    z-index: 20;
+    overflow: hidden;
+    transition: height .5s;
+    /* display: none; */
     
+}
+.logo-right-nav .nav-list-one .nav-item-one:hover .logo-none{
+    /* display: block; */
+    height: 229px;
+    border-top: 1px solid #e0e0e0;
+    color: #333;
+}
+.logo-none .none-content {
+    width: 1229px;
+    height: 201px;
+    /* background-color: #333; */
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.price {
+    width: 180px;
+    height: 166px;
+    padding: 35px 12px 0px 12px;
+    float: left;
+    text-align: center;
+    font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+.price img{
+    width: 160px;
+    height: 110px;
+}
+.price .name  {
+    /* display: inline-block; */
+    height: 20px;
+}
+
+.price .pic{
+    height: 20px;
+    color: #ff6700;
+    /* float: left; */
+}
+
+.line {
+    width: 1px;
+    height: 100px;
+    background-color: #e0e0e0;
+    float: left;
+    position: relative;
+    top: 50px;
 }
 
 
 
 
+/* logo导航栏最右边的搜索栏css */
+.logo-right-search {
+    width: 301px;
+    height: 50px;
+    float: left;
+    background-color: burlywood;
+    margin-top: 25px;
+    position: relative;
+}
+
+.search-form {
+    height: 50px;
+}
+
+.logo-right-search .search-border {
+    float:left;
+    width: 245px;
+    height: 50px;
+    padding: 0px 10px;
+    line-height: 48px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+}
+
+.logo-right-search:hover .search-border {
+    border: 1px solid #b0b0b0;
+    /* border-right: none; */
+}
+.logo-right-search:hover .search {
+    border: 1px solid #b0b0b0;
+    border-left: none;
+    cursor:pointer;
+}
 
 
+.logo-right-search .search {
+    width: 56px;
+    height: 50px;
+    float: left;
+    padding: 0px 6px;
+    border: 1px solid #e0e0e0;
+    /* outline: none; */
+    background: #fff url(../Images/搜索1.png)  center no-repeat;
+    background-size: 30px 30px;
+    /* position: absolute; */
+}
+.logo-right-search .search:hover {
+    background: #ff6700 url(../Images/搜索2.png)  center no-repeat;
+    background-size: 30px 30px;
+}
+
+.logo-right-search .tag {
+    position: absolute;
+    /* float: right; */
+    left: 10px;
+    top: 18px;
+    color: #757575;
+}
 
 
 /* 主要内容的css代码 */
 .content-main {
     width: 1226px;
-    height: 607px;
-    background-color: blueviolet;
+    height: 670px;
+    /* background-color: blueviolet; */
+    margin: 0px auto;
+
 }
+
+.main-background {
+    width: 100%;
+    height: 460px;
+    background-image: url(../Images/main.png);
+    background-size: 1226px 460px;
+}
+
+.main-bottom {
+    width: 100%;
+    height: 170px;
+    background-color: #ff6700;
+    margin-top: 14px;
+}
+
 
 /* 次要内容的css代码 */
 .content-secondary {
     height: 6401px;
     background-color: brown;
+    z-index: -1px;
 }
 
 /* 服务部分的css代码 */
@@ -144,6 +409,3 @@
 }
 
 /* 最右边的固定侧栏 */
-.right-sidebar {
-
-}
