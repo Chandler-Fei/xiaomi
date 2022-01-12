@@ -269,13 +269,9 @@ div {
     position: absolute;
     left: 0px;
     top: 100px;
-    /* border-top: 1px solid #e0e0e0; */
-    /* color: #ff6700; */
     box-shadow: 0 3px 4px rgb(0 0 0 / 18%);
     z-index: 20;
     overflow: hidden;
-    transition: height .5s;
-    /* display: none; */
     
 }
 .logo-right-nav .nav-list-one .nav-item-one:hover .logo-none{
@@ -413,6 +409,7 @@ div {
     left: 338.5px;
     font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
     color: #fff;
+
 }
 
 .category .category-list {
@@ -421,6 +418,7 @@ div {
     padding: 20px 0px;
     background-color: #424049;
     line-height: 42px;
+    position: relative;
 }
 
 .category .category-list .category-item {
@@ -429,7 +427,7 @@ div {
     /* background-color: #fff; */
 }
 .category .category-list .category-item .title {
-    /* position: relative; */
+    position: relative;
     height: 42px;
     display: block;
     padding-left: 30px;
@@ -450,26 +448,262 @@ div {
     background-size: 16px 16px;
 }
 
+
+
+
+/* 主页导航栏隐藏部分的css */
+.category-none {
+    height: 458px;
+    width: 992px;
+    background-color: #333;
+    position: absolute;
+    top: 0px;
+    left: 234px;
+    display: none;
+    border: 1px solid #e0e0e0;
+    border-left: 0px;
+    /* box-shadow: 0 3px 4px rgb(0 0 0 / 18%); */
+    background-color: #fff;
+}
+.category-none-tow {
+    width: 795px;   
+}
+.category-none-three {
+    width: 531px;
+}
+
+.category-none-list {
+    float: left;
+    width: 248px;
+    height: 458px;
+    padding: 2px 0px;
+    /* background-color: #ff6700; */
+
+}
+.category-none-list .category-none-list-item {
+    width: 265px;
+    height: 76px;
+    background-color: #fff;
+}
+.category-none-list .category-none-list-item .link {
+    width: 225px;
+    height: 40px;
+    padding: 18px 20px;
+    display: block;
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+
+.category-none-list .category-none-list-item .link img {
+    float: left;
+    margin-right: 12px;
+}
+
+.category-none-list .category-none-list-item .link .text {
+    width: 172px;
+    line-height: 40px;
+    float: left;
+}
+
+/* 主页隐藏导航栏的hover事件css */
+.category .category-list .category-item:hover .category-none {
+    display: block;
+}
+
 .category .category-list .category-item .title:hover {
     background-color: #ff6700;
 }
 
+.category-none-list .category-none-list-item .link:hover {
+    color: #ff6700;
+}
 
+
+/* 主页下面一块部分的css */
 .main-bottom {
     width: 100%;
     height: 170px;
-    background-color: #ff6700;
+    /* background-color: #ff6700; */
     margin-top: 14px;
 }
+/* 主页下方六个小的导航栏 */
+.main-bottom .info {
+    width: 234px;
+    height: 170px;
+    float: left;
+    background-color: #5f5750;;
+    font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #fff;
 
+
+}
+.main-bottom .info .info-list {
+    width: 234px;
+    height: 170px;
+}
+
+.main-bottom .info .info-list .info-item {
+    height: 82px;
+    width: 70px;
+    position: relative;
+    padding: 0px 3px;
+    float: left;
+}
+
+.main-bottom .info .info-list img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0px auto 4px;
+}
+
+.main-bottom .info .info-list a {
+    display: block;
+    padding-top: 18px;
+    text-align: center;
+    opacity: .7;
+    transition: opacity .2s;
+
+}
+
+.main-bottom .info .info-list a:hover {
+    opacity: 1;
+}
+
+/* 导航栏里面的线条 */
+
+
+.info-list .line {
+    height: 70px;
+    width: 1px;
+    position: absolute;
+    /* background: #665e57; */
+}
+.info-list li::before {
+    position: absolute;
+    background-color: #665e57;
+    content: "";
+    width: 64px;
+    height: 1px;
+    top: 4px;
+    left: 15px;
+}
+.info-list li::after {
+    position: absolute;
+    background-color: #665e57;
+    content: "";
+    width: 1px;
+    height: 70px;
+    top: 11px;
+    left: 9px;
+}
+
+/* 导航栏旁边的三张图片 */
+.main-bottom .bottom-img {
+    float: left;
+    /* width: 978px;
+    height: 170px; */
+    /* background-color: #ff6700; */
+    margin-left: 14px;
+}
+
+
+.main-bottom .bottom-img .bottom-list {
+    width: 978px;
+    height: 170px;
+}
+.main-bottom .bottom-img .bottom-list .bottom-item
+{
+    margin-left: 0px;
+}
+.main-bottom .bottom-img .bottom-list  li {
+    width: 316px;
+    height: 170px;
+    margin-left: 15px;
+    float: left;
+    background-color: aqua;
+}
+.main-bottom .bottom-img .bottom-list img {
+    width: 316px;
+    height: 170px;
+}
 
 
 
 /* 次要内容的css代码 */
 .content-secondary {
     height: 6401px;
-    background-color: brown;
     z-index: -1px;
+    padding: 4px 0px 12px 0px ;
+}
+
+.content-secondary .content {
+    width: 1226px;
+    height: 100%;
+    margin: 0px auto;
+    /* background-color: brown; */
+}
+/* 横幅内容css */
+.content-secondary .content .main-banner-box{
+    height: 120px;
+    overflow: hidden;
+    margin: 22px 0px;
+}
+
+/* 首页手机内容css */
+.content-secondary .content .phone {
+    height: 686px;
+    background-color: #ff6700;
+}
+
+.content-secondary .content .phone .text {
+    height: 58px;
+    background-color: #fff;
+    font: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    position: relative;
+}
+.content-secondary .content .phone .text .title {
+    margin: 0px;
+    line-height: 58px;
+    font-weight: 200;
+    color: #333;
+    font-size: 22px;
+}
+.content-secondary .content .phone .text .more {
+    width: 92px;
+    height: 58px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.content-secondary .content .phone .text .more .iconfont {
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    font-size: 12px;
+    background: #b0b0b0;
+    color: #fff;
+    border-radius: 50%;
+    vertical-align: 1px;
+    margin-left: 4px;
+    /* margin-left: 8px; */
+    /* font-weight: 300; */
+    /* display: inline-block; */
+    transition: all .4s;
+}
+.content-secondary .content .phone .text .more .more-link {
+    color: #424242;
+    font-size: 16px;
+    line-height: 58px;
+    transition: all .4s;
+}
+
+.content-secondary .content .phone .text .more .more-link:hover {
+    color: #ff6700;
+}
+.content-secondary .content .phone .text .more .more-link:hover .iconfont{
+    background-color: #ff6700;
+    
 }
 
 /* 服务部分的css代码 */
