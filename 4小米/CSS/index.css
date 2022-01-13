@@ -653,7 +653,7 @@ div {
 /* 首页手机内容css */
 .content-secondary .content .phone {
     height: 686px;
-    background-color: #ff6700;
+    /* background-color: #ff6700 */
 }
 
 .content-secondary .content .phone .text {
@@ -670,7 +670,7 @@ div {
     font-size: 22px;
 }
 .content-secondary .content .phone .text .more {
-    width: 92px;
+    /* width: 92px; */
     height: 58px;
     position: absolute;
     top: 0px;
@@ -704,6 +704,155 @@ div {
 .content-secondary .content .phone .text .more .more-link:hover .iconfont{
     background-color: #ff6700;
     
+}
+
+/* 标题下方的图片 */
+/* 最左边的大图片 */
+.content-secondary .content .phone .box-img {
+    width: 1240px;
+    height: 628px;
+    /* background-color: #333; */
+}
+.content-secondary .content .phone .box-img .big {
+    /* width: 234px; */
+    /* height: 100%; */
+    /* background-color: #B0B0B0; */
+    /* margin-left: 14px; */
+    float: left;
+}
+
+.big-list {
+    height: 614px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.big-item {
+    position: relative;
+    width: 234px;
+    float: left;
+    z-index: 1;
+    transition: all .3s;
+    background-color: #fff;
+}
+
+/* 右边的八个小图片 */
+
+.content-secondary .content .phone .small {
+    float: left;
+    width: 992px;
+    /* height: 628px; */
+    /* background-color: red; */
+    margin-left: 14px;
+}
+
+ .small .small-list .big-item-2 {
+    height: 300px;
+    /* background-color: royalblue; */
+    float: left;
+    margin: 0px 0px 14px 14px ;
+}
+.small .small-list .big-item-2 .title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    margin: 0 10px 2px;
+}
+.small .small-list .big-item-2 .desc {
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.small .small-list .big-item-2 .pic {
+    margin: 0 10px 14px;
+    color: #ff6700;
+    font-size: 14px;
+}
+.small .small-list .big-item-2 img {
+    width: 160px;
+    height: 160px;
+}
+.small .small-list .big-item-2  a{
+    display: block;
+    height: 100%;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.small .small-list .small-img {
+    /* width: 243px; */
+    height: 93px;
+    background-color: #fff;
+    margin: 0px 0px 14px 14px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.small .small-list .small-img .title {
+    margin: -10px 110px 5px 30px;
+}
+.small .small-list .small-img img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.small .small-list .small-img .pic {
+    margin: 0 110px 0 30px;
+}
+
+.small .small-list .small-img .title-s {
+    font-size: 18px;
+    margin-bottom: -5px;
+}
+
+.small .small-list .small-img .pic-s {
+    /* font-size: -12px; */
+    color: #757575;
+}
+
+.small .small-list .small-img .arrow {
+    height: 60px;
+    width: 60px;
+}
+
+
+
+.content-secondary .content .phone .box-img .big-item:hover {
+    /* border: 1px solid #B0B0B0; */
+
+    /* border: 1px solid #e0e0e0; */
+    /* border-right: 1px solid #e0e0e0; */
+    /* box-sizing: border-box; */
+    z-index: 2;
+    box-shadow: 0px  0px 15px 15px rgb(0 0 0 / 10%);
+    transform: translate3d(0,-2px,0);
+}
+
+/* 智能板块的css */
+.more-list {
+    padding-top: 16px;
+    font-size: 16px;
+    height: 26px;
+    /* width: 124px; */
+}
+.more-item {
+    float:left;
+    margin-left: 30px;
+    padding: 0px;
+    /* display: inline-block; */
+    /* height: 17px; */
+}
+
+.one{
+    color: #ff6700;
+    border-bottom: 2px  solid#ff6700;
+}
+.hide {
+    display: none!important;
 }
 
 /* 服务部分的css代码 */
