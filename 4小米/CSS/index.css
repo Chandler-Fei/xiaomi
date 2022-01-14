@@ -787,6 +787,15 @@ div {
     margin: 0px 0px 14px 14px;
     padding-top: 50px;
     position: relative;
+
+}
+
+.small .small-list .small-img a {
+    text-align: left;
+}
+
+.small .small-list .small-img .desc {
+    margin-right: 30px;
 }
 
 .small .small-list .small-img .title {
@@ -819,6 +828,11 @@ div {
     width: 60px;
 }
 
+.big-item-3 {
+    height: 300px;
+    float: none;
+    margin-bottom: 14px;
+}
 
 
 .content-secondary .content .phone .box-img .big-item:hover {
