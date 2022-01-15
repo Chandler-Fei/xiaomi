@@ -17,7 +17,8 @@ div {
 /* 整个最大的div的css */
 .whole {
     width: 1903px;
-    height: 7809px;
+    /* height: 7809px; */
+    /* height: 7759px; */
     /* background-color: aquamarine; */
     font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
 }
@@ -206,7 +207,7 @@ div {
     /* position: relative; */
 }
 /* 头部logo的css代码 */
-.logo {
+.nav-logo-content .logo {
     width: 62px;
     height: 56px;
     float: left;
@@ -632,14 +633,14 @@ div {
 
 /* 次要内容的css代码 */
 .content-secondary {
-    height: 6401px;
-    z-index: -1px;
+    height: 6338px;
+    z-index: -1;
     padding: 4px 0px 12px 0px ;
 }
 
 .content-secondary .content {
     width: 1226px;
-    height: 100%;
+    /* height: 100%; */
     margin: 0px auto;
     /* background-color: brown; */
 }
@@ -656,27 +657,27 @@ div {
     /* background-color: #ff6700 */
 }
 
-.content-secondary .content .phone .text {
+.text {
     height: 58px;
     background-color: #fff;
     font: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
     position: relative;
 }
-.content-secondary .content .phone .text .title {
+.text .title {
     margin: 0px;
     line-height: 58px;
     font-weight: 200;
     color: #333;
     font-size: 22px;
 }
-.content-secondary .content .phone .text .more {
+.more {
     /* width: 92px; */
     height: 58px;
     position: absolute;
     top: 0px;
     right: 0px;
 }
-.content-secondary .content .phone .text .more .iconfont {
+ .iconfont {
     width: 12px;
     height: 12px;
     padding: 4px;
@@ -691,19 +692,18 @@ div {
     /* display: inline-block; */
     transition: all .4s;
 }
-.content-secondary .content .phone .text .more .more-link {
+ .more-link {
     color: #424242;
     font-size: 16px;
     line-height: 58px;
     transition: all .4s;
 }
 
-.content-secondary .content .phone .text .more .more-link:hover {
+ .more-link:hover {
     color: #ff6700;
 }
-.content-secondary .content .phone .text .more .more-link:hover .iconfont{
+ .more-link:hover .iconfont{
     background-color: #ff6700;
-    
 }
 
 /* 标题下方的图片 */
@@ -743,7 +743,7 @@ div {
     width: 992px;
     /* height: 628px; */
     /* background-color: red; */
-    margin-left: 14px;
+    /* margin-left: 14px; */
 }
 
  .small .small-list .big-item-2 {
@@ -869,16 +869,345 @@ div {
     display: none!important;
 }
 
+/* 首页视频板块的css */
+.video {
+    width: 1226px;
+    height: 357px;
+    /* background-color: #333;  */
+}
+
+.video-list {
+    width: 1240px;
+    height: 285px;
+    /* background-color: #ff6700; */
+}
+
+.video-item {
+    width: 296px;
+    height: 285px;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    transition: all .3s;
+    margin-left: 14px;
+}
+
+.video-item-first {
+    margin-left: 0px;
+}
+.play {
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    background-color: #424242;
+    position: absolute;
+    left: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    top: 145px;
+    text-align: center;
+}
+
+
+.play img {
+    width: 15px;
+    height: 15px;
+    padding: 2px 0px 0px 2px;
+    
+}
+
+.video-list .video-item .title {
+    margin:20px 0px 14px 6px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.video-item:hover {
+    z-index: 2;
+    box-shadow: 0px  0px 15px 15px rgb(0 0 0 / 10%);
+    transform: translate3d(0,-2px,0);
+}
+.video-item:hover .play {
+    background-color: #ff6700 ;
+}
+
 /* 服务部分的css代码 */
 .service {
     height: 332px;
-    background-color: burlywood;
+    /* background-color: burlywood; */
+}
+
+.service .content {
+    height: 332.5px;
+    width: 1226px;
+    margin: 0px auto;
+    /* background-color: #ff6700; */
+}
+
+.service .content .title {
+    height: 25px;
+    background-color: #fff;
+    padding: 27px 0px;
+
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.service .content .title .title-list {
+    height: 100%;
+}   
+
+.service .content .title .title-item {
+    float: left;
+
+    width: 19.8%;
+    text-align: center;
+    position: relative;
+    height: 25px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.service .content .title .title-item a {
+    transition: all .3s;
+    color: #616161;
+    font-size: 16px;
+}
+
+.service .content .title .title-item a:hover {
+    color: #ff6700;
+}
+
+.service .content .title .title-end {
+    border-right: none;
+}
+
+.service .content .link {
+    height: 172.5px;
+    /* background-color: #333; */
+    padding: 40px 0px;
+}
+
+.service .content .link .column {
+    width: 160px;
+    float: left;
+    margin: 0px;
+}
+
+.service .content .link .column dt {
+    margin-bottom: 26px;
+    font-size: 14px;
+    color: #424242;
+}
+.service .content .link .column dd{
+    font-size: 12px;
+    color: #757575;
+    margin: 10px 0 0;
+}
+.service .content .contact {
+    float: right;
+    width: 251px;
+    color: #616161;
+    border-left:1px solid #e0e0e0;
+    height: 111px;
+    text-align: center;
+}
+
+.service .content .contact .phone {
+    font-size: 22px;
+    color: #ff6700;
+}
+
+.service .content .contact p {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+}
+
+.service .content .contact .button {
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    transition: all .4s;
+}
+
+.service .content .contact .button:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.service .content .contact .follow {
+    width: 251px;
+    height: 21px;
+    /* background-color: aqua; */
+    margin-top: 10px;
+    position: relative;
+}
+
+.service .content .contact .follow a {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.service .content .contact .follow .wb {
+    background-image: url(../Images/wb.png);
+    background-size: cover;
+}
+
+.service .content .contact .follow .wx {
+    background-image: url(../Images/wx.png);
+    background-size: cover;
+}
+
+.service .content .contact .follow .follow-none {
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    display: none;
+}
+
+
+.service .content .contact .follow .wb:hover {
+    background-image: url(../Images/wb-2.png);
+    background-size: cover;
+}
+.service .content .contact .follow .wx:hover {
+    background-image: url(../Images/wx-2.png);
+    background-size: cover;
+}
+
+.service .content .contact .follow .wx:hover .follow-none {
+    display: block;
 }
 
 /* 信息部分的css代码 */
 .info {
-    height: 266px;
-    background-color: cadetblue;
+    height: 121px;
+    padding: 30px 0px;
 }
 
+.info .content {
+    width: 1226px;
+    height: 157px;
+    position: relative;
+    margin: 0px auto;
+    /* background-color: aqua; */
+}
+
+.info .content .logo {
+    background-image: url(../Images/logo.png);
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    background-size: 56px;
+    margin-right: 20px;
+}
+.info .content .info-text {
+    color: #b0b0b0;
+    padding-left: 77px;
+    height: 110px;
+    line-height: 18px;
+}
+
+.info .content .info-text .sites a {
+    color: #757575;
+    font-size: 12px;
+}
+
+.info .content .info-text a:hover {
+    color: #ff6700;
+}
+
+.info .content .info-img {
+    padding-left: 77px;
+}
+.info .content .info-img img {
+    height: 28px;
+}
+.home-bottom {
+    margin: 30px 0;
+    width: 100%;
+    height: 19px;
+    background: url(../Images/bottom.png) no-repeat center ;
+}
 /* 最右边的固定侧栏 */
+.right-sidebar {
+    width: 84px;
+    height: 561px;
+    position: fixed;
+    /* background-color: #ff6700; */
+    right: 0px;
+    bottom: 70px;
+}
+.right-sidebar .link{
+    width: 82px;
+    height: 90px;
+    border: 1px solid #fff;
+    /* background-color: aqua; */
+    /* position: relative; */
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    color: #757575;
+}
+
+.right-sidebar .link .icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding-top: 18px;
+    margin: 0px auto 8px;
+}
+
+.right-sidebar .link .icon-img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0px;
+}
+
+.right-sidebar .link .none {
+    width: 100px;
+    height: 162px;
+    padding: 14px;
+    /* background-color: #ff6700; */
+    position: absolute;
+    top: 0px;
+    right: 92px;
+    display: none;
+}
+
+.right-sidebar .link .none .none-img {
+    width: 100px;
+    height: 100px;
+    margin: 6px 0;
+}
+
+.right-sidebar .link .none .icon-text {
+    width: 82px;
+    height: 42px;
+    color: #757575;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.right-sidebar .link .sodebar-text {
+    display: inline;
+}
+
+.right-sidebar .link:hover .none{
+    display: block;
+}
