@@ -26,6 +26,7 @@ div {
 /* 头部的css代码 */
 .header {
     height: 140px;
+
 }
 /* 定义头部导航栏的大小 */
 .nav-top {
@@ -391,7 +392,47 @@ div {
     height: 670px;
     /* background-color: blueviolet; */
     margin: 0px auto;
+}
 
+.content-main .main {
+    position: relative;
+}
+.content-main .main .arrow {
+    height: 69px;
+    width: 41px;
+    background-color: #ff6700;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    background: url(../Images/main-arrow.png) no-repeat -84px 50%;
+    left: 234px;
+}
+
+.content-main .main .left {
+    left: auto;
+    right: 0px;
+    background: url(../Images/main-arrow.png) no-repeat -125px 50%;
+}
+
+.content-main .main .arrow:hover {
+    background-color: #001413;
+    cursor: pointer;
+}
+
+
+.content-main .main .spot {
+    height: 22px;
+    width: 77px;
+    background-color: #fff;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    background-image: url(../Images/main-bottom.jpg);
+}
+
+
+.content-main .main .spot:hover {
+    cursor: pointer;
 }
 
 .main-background {
@@ -410,7 +451,7 @@ div {
     left: 338.5px;
     font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
     color: #fff;
-
+    z-index: 1;
 }
 
 .category .category-list {
@@ -528,7 +569,7 @@ div {
     margin-top: 14px;
 }
 /* 主页下方六个小的导航栏 */
-.main-bottom .info {
+.main-bottom .info-small {
     width: 234px;
     height: 170px;
     float: left;
@@ -538,12 +579,12 @@ div {
 
 
 }
-.main-bottom .info .info-list {
+.main-bottom .info-small .info-list {
     width: 234px;
     height: 170px;
 }
 
-.main-bottom .info .info-list .info-item {
+.main-bottom .info-small .info-list .info-item {
     height: 82px;
     width: 70px;
     position: relative;
@@ -551,14 +592,14 @@ div {
     float: left;
 }
 
-.main-bottom .info .info-list img {
+.main-bottom .info-small .info-list img {
     width: 24px;
     height: 24px;
     display: block;
     margin: 0px auto 4px;
 }
 
-.main-bottom .info .info-list a {
+.main-bottom .info-small .info-list a {
     display: block;
     padding-top: 18px;
     text-align: center;
@@ -567,7 +608,7 @@ div {
 
 }
 
-.main-bottom .info .info-list a:hover {
+.main-bottom .info-small .info-list a:hover {
     opacity: 1;
 }
 
@@ -633,6 +674,8 @@ div {
 
 /* 次要内容的css代码 */
 .content-secondary {
+    background-color: #f5f5f5;
+
     height: 6338px;
     z-index: -1;
     padding: 4px 0px 12px 0px ;
@@ -657,9 +700,9 @@ div {
     /* background-color: #ff6700 */
 }
 
-.text {
+.phone .text {
     height: 58px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     font: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
     position: relative;
 }
@@ -732,7 +775,7 @@ div {
     width: 234px;
     float: left;
     z-index: 1;
-    transition: all .3s;
+    transition: all .6s;
     background-color: #fff;
 }
 
@@ -842,7 +885,7 @@ div {
     /* border-right: 1px solid #e0e0e0; */
     /* box-sizing: border-box; */
     z-index: 2;
-    box-shadow: 0px  0px 15px 15px rgb(0 0 0 / 10%);
+    box-shadow:   0px 15px 15px rgb(0 0 0 / 10%);
     transform: translate3d(0,-2px,0);
 }
 
@@ -929,7 +972,7 @@ div {
 
 .video-item:hover {
     z-index: 2;
-    box-shadow: 0px  0px 15px 15px rgb(0 0 0 / 10%);
+    box-shadow: 0px  0px 10px 10px rgb(0 0 0 / 10%);
     transform: translate3d(0,-2px,0);
 }
 .video-item:hover .play {
@@ -1008,6 +1051,11 @@ div {
     color: #757575;
     margin: 10px 0 0;
 }
+
+.service .content .link .column a:hover {
+    color: #ff6700;
+}
+
 .service .content .contact {
     float: right;
     width: 251px;
@@ -1095,6 +1143,8 @@ div {
 .info {
     height: 121px;
     padding: 30px 0px;
+    background-color: #f5f5f5;
+
 }
 
 .info .content {
@@ -1136,10 +1186,13 @@ div {
     height: 28px;
 }
 .home-bottom {
-    margin: 30px 0;
+    /* margin: 30px 0; */
+    padding: 30px 0px;
     width: 100%;
     height: 19px;
     background: url(../Images/bottom.png) no-repeat center ;
+    background-color: #f5f5f5;
+
 }
 /* 最右边的固定侧栏 */
 .right-sidebar {
@@ -1149,17 +1202,19 @@ div {
     /* background-color: #ff6700; */
     right: 0px;
     bottom: 70px;
+    background-color: #fff;
 }
 .right-sidebar .link{
     width: 82px;
     height: 90px;
-    border: 1px solid #fff;
+    border: 1px solid #f5f5f5;
     /* background-color: aqua; */
     /* position: relative; */
     text-align: center;
     display: inline-block;
     font-size: 14px;
     color: #757575;
+    /* background-color: #fff; */
 }
 
 .right-sidebar .link .icon {
